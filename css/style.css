@@ -727,6 +727,7 @@ body {
     width: 550px;
     background: url("../img/helsinki-5-1.jpg");
     height: 440px;
+    margin: 0 auto;
   }
 }
 #pictip-big .pictip-big-close {
