@@ -81,6 +81,7 @@ p, pre {
   src: url("../fonts/princetownd.ttf") format("truetype"), url("../fonts/princetownd.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 body {
   background-color: #F1F1F1;
