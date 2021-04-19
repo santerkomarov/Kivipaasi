@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="kivimyynti, kiviasennus, kivirakentamisen palvelut, talonrakennus, infrarakentaminen">
+	<meta name="description" content="Kivipaasi Oy tarjoaa kivimyynti- ja asennuspalveluita sekä infra- ja talonrakennuksen kivirakentamispalveluita etupäässä rakennusliikkeille ja julkisille toimijoille koko Suomessa.">
+	<meta property="og:title" content="Kivipaasi Oy | kivimyynti-ja asennuspalvelut | talonrakennus- ja infrarakentamisen palvelut | Luhtajoki | Suomi">
+	<meta property="og:description" content="Kivipaasi Oy tarjoaa kivimyynti- ja asennuspalveluita sekä infra- ja talonrakennuksen kivirakentamispalveluita etupäässä rakennusliikkeille ja julkisille toimijoille koko Suomessa.">
+	<title>Kivipaasi Oy | kivimyynti-ja asennuspalvelut | talonrakennus- ja infrarakentamisen palvelut | Luhtajoki | Suomi</title>
+	<link type="image/x-icon" rel="shortcut icon" href="img/logo1.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/navigatio.js"></script>
+	
+
+</head>
+<body>
+
+	<div class="wrap">
+
+		<header>
+			<div class="top">
+				<div class="logo">
+					<img src="img/logo1.png" height="40" width="46" alt="logo">
+					<p>kivipaasi oy</p>
+				</div>
+				<p id="phone">Puh. 0503898008</p>
+				<img src="img/facebook.png" height="40" width="40" alt="icon facebook">
+			</div>
+
+			<div class="top-mobail">
+				<div class="logo-mobail">
+					<img src="img/logo1.png" height="40" width="46" alt="logo">
+					<p>kivipaasi oy</p>
+				</div>
+				<p><img src="img/burger.png" height="30" width="30" alt="burger" onclick="showMobailMenu()"></p>
+			</div>
+
+		</header>
+
+		<nav id="nav">
+			<ul>
+				<li id="li1"><a href="index.html">ETUSIVU</a></li>
+				<li id="li2"><a href="kivi.html">KIVIMYYNTI JA<br>-ASENNUSPALVELUT</a></li>
+				<li id="li3"><a href="infra.html">INFRA- JA <br>TALONRAKENTAMISEN PALVELUT</a></li>
+				<li id="li4"><a href="referenssit.html">REFERENSSIT</a></li>
+				<li id="li5"><a href="ota-yhtiota.html">OTA YHTIÖTTÄ</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+			<div class="banner-main">
+				<p>Kivipaasi oy</p>
+				<p> Tarjoamme kivimyyntiä ja kiviasennuksia sekä kivirakentamisen palveluita infra- ja talonrakentamiskohteissa koko Suomen alueella.</p>
+			</div>
+			<div class="banner-middle">
+				<p>Kivipaasi Oy tarjoaa kivimyynti- ja asennuspalveluita sekä infra- ja talonrakennuksen kivirakentamispalveluita etupäässä rakennusliikkeille ja julkisille toimijoille.</p>
+				<p>Kivipaasi Oy:ltä löytyy kattava valikoima sekä sisä- että ulkokäyttöön soveltuvia kiviä.</p>
+				<p>Valikoimiimme kuuluu marmori, graniitti ja kalkkikivet.</p>
+				<p>Me asennamme ne kohteisiin paikoilleen ja tarjoamme asiakkaillemme mahdollisuuden toteuttaa kohdeympäristöön sopivia julkisivu-, laatoitus- ja tilaratkaisuja. Laadukkaasti ja ammattitaidolla tehdyt piha- ja puistoalueet, katukivetykset, virkistysalueet ja julkiset kohteet, kuten torit ja erilaiset aukiot luovat viihtyvyyttä ja rikastavat ympäristöään.</p>
+				<p>Toimimme asiakaslähtöisesti tarjoten laadukasta ja kestävää työnjälkeä kaikissa asennuskohteissamme.</p>
+			</div>
+			<div class="banner-count">
+				
+				<div class="banner-count-wrap">
+					<div class="banner-count-item">
+						<p class="banner">20</p>
+						<p>VUODET KOKEMUS</p>
+					</div>
+					<div class="banner-count-item">
+						<p class="banner">500</p>
+						<p>ERILAISTA RAKENNUSKOHDETTA</p>
+					</div>
+					<div class="banner-count-item">
+						<p class="banner">9000</p>
+						<p>М&#178;  LAATAN ON ASENETTU</p>
+					</div>
+				</div>
+
+			</div> 
+		</main>
+
+		<footer>
+			<p>Kivipaasi Oy <br><br>Y-tunnus: 2029563-5</p>
+			<p>Lampitie 45 <br><br>01810, LUHTAJOKI</p>
+			<p>Puh. 0503898008 <br><br>toimisto@kivipaasi.fi <br><br><span>Created by BERGAN</span></p>
+		</footer>
+	</div> 
+
+<script>
+	let countGlob = 1;
+	function count() { 
+		if (countGlob < 40) {
+			var c = $('.banner').each(function () {
+		  		$(this).prop('Counter',1).animate(
+			    	{
+			        Counter: $(this).text() 
+			    	}, {
+					   duration: 2500,
+					   easing: 'swing',
+					   step: function (w) {
+					      $(this).text(Math.round(w));
+					   	}
+			    	});
+		 	});
+	 		countGlob += 1;
+		} else {
+			return false;
+		}	
+	}
+	setInterval(count, 4000);
+</script>
+<script>
+	var navLiActive = document.getElementById("li1");
+	navLiActive.style.backgroundColor = "#736356";
+</script>
+
+</body>
+</html>
