@@ -116,7 +116,7 @@ function send(){
 // =========== check input: NIMI, YRITYS =============
 function checkLetterNumber(x,y,z) {
 	// checkLetterNumber(nimi, nimiId, nimiTip)
-	var letterNumber = /^[0-9a-zA-Z\s]+$/;
+	var letterNumber = /^[0-9a-zA-ZäÄöÖ\s]+$/;
 	if(x.match(letterNumber)) {
 		// return true;
 	} else {
